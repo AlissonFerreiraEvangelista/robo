@@ -31,8 +31,6 @@ class Robo:
     time.sleep(4)
     recepcao = driver.find_element_by_xpath('//*[@id="cphBody_dtlAplicativos_lblNomegrpApl_2"]').click()
     time.sleep(7)
-    
-
 
     for index,row in df.iterrows(): 
         prestador = driver.find_element_by_xpath('//*[@id="cphBody_Conteudo_ddlUniAtendimento_TextBox"]').send_keys(row["PRESTADOR"])
